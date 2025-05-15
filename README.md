@@ -21,10 +21,10 @@ A simple and interactive **Table Tennis (Ping Pong) Scoreboard** web app built u
 ## 📂 Project Structure
 
 
-TT-ScoreBoard/
-├── index.html # Main HTML file
-├── style.css # Stylesheet for layout and design
-├── script.js # JavaScript logic for game functionality
+TT-ScoreBoard\
+├── index.html # Main HTML file\
+├── style.css # Stylesheet for layout and design\
+├── script.js # JavaScript logic for game functionality\
 └── README.md # Project documentation
 
 
