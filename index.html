@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TT Score Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Ping Pong Score Board</h1>
+
+    <!-- Player Name Inputs -->
+    <div class="name-inputs">
+      <input type="text" id="nameP1" placeholder="Player 1 Name" />
+      <input type="text" id="nameP2" placeholder="Player 2 Name" />
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="player">
+        <label id="labelP1">Player 1</label>
+        <div class="score" id="player1points">0</div>
+      </div>
+
+      <div class="winner" id="winnerName"></div>
+
+      <div class="player">
+        <label id="labelP2">Player 2</label>
+        <div class="score" id="player2points">0</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <select id="winningScoreCount">
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+      </select>
+
+      <div class="buttons">
+        <button id="incrementP1">+ Player 1</button>
+        <button id="reset">Reset</button>
+        <button id="incrementP2">+ Player 2</button>
+      </div>
+    </div>
+
+    <!-- Score History -->
+    <div class="history">
+      <h3>🏅 Score History</h3>
+      <ul id="scoreHistory"></ul>
+    </div>
+  </main>
+
+  <audio id="clickSound" src="click.mp3.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

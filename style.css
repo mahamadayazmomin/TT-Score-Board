@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.name-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.name-inputs input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #333;
+  color: #fff;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+}
+
+.player {
+  background-color: #222;
+  border-radius: 1rem;
+  padding: 1rem;
+  flex: 1;
+  min-width: 140px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #00cccc;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-shadow: 0 0 5px #000;
+}
+
+.winner {
+  font-size: 1.4rem;
+  color: #00ff00;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  width: 100%;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+#winningScoreCount {
+  padding: 0.6rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: #333;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;       /* Smaller padding */
+  border-radius: 0.6rem;      /* Slightly smaller rounded corners */
+  cursor: pointer;
+  font-size: 0.95rem;         /* Slightly smaller text */
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  min-width: 100px;           /* Set minimum width */
+  height: 40px;               /* Fixed smaller height */
+}
+
+button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #777;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.history {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.history h3 {
+  margin-bottom: 0.5rem;
+  color: #ffcc00;
+  text-shadow: 0 0 3px #ffcc00;
+}
+
+#scoreHistory {
+  list-style: decimal;
+  padding-left: 1rem;
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+/* -------- Mobile phones -------- */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .name-inputs,
+  .buttons {
+    flex-direction: column;
+  }
+
+  .player {
+    min-width: 120px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 38px; /* Smaller height for mobile */
+  }
+
+  .score {
+    font-size: 2.2rem;
+  }
+
+  .scoreboard {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+}
+
+/* -------- Tablets -------- */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .player {
+    width: 45%;
+  }
+
+  .buttons {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  button {
+    flex: 1 1 40%;
+    max-width: 180px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+}
