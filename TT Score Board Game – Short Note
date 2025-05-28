@@ -1,0 +1,13 @@
+The TT (Table Tennis) Score Board Game is a digital scoreboard designed to track and display scores during a table tennis match. It provides a simple and interactive way for players and spectators to follow the game progress. The game usually includes features like:
+
+Player Name Inputs – Customizable names for both players.
+
+Score Buttons – Increase or reset player scores with a tap or click.
+
+Winning Logic – Automatically highlights the winner when a player reaches 11 points with at least a 2-point lead.
+
+Keyboard Controls – Allows score updates using keys for faster input during play.
+
+Mobile Responsive Design – Works smoothly on both mobile and desktop devices.
+
+Optional Features – Sound effects, score history, countdown timers, and background music for an enhanced experience.
